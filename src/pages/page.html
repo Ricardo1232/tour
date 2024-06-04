@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Eventos - Gira CUCEI</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+        .top-bar {
+            background-color: #a31f34;
+            padding: 10px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar img {
+            height: 80px;
+            margin-right: 10px;
+        }
+        .top-bar .title-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .top-bar .main-title {
+            font-size: 1.5em;
+        }
+        .top-bar .sub-title {
+            font-size: 1em;
+        }
+        header {
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.5em;
+            border-bottom: 2px solid #00ffcc;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main {
+            padding: 20px;
+            background: #1a1a1a;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        #main h1 {
+            text-align: center;
+            color: #00ffcc;
+        }
+        .section-title {
+            background: #00ffcc;
+            color: #0d0d0d;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .calendar, .games, .categories, .info {
+            margin-bottom: 20px;
+        }
+        .calendar ul, .games ul, .categories ul, .info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .calendar li, .games li, .categories li, .info li {
+            padding: 10px;
+            background: #262626;
+            margin-bottom: 5px;
+            border: 1px solid #00ffcc;
+            border-radius: 5px;
+        }
+        .register {
+            text-align: center;
+            padding: 20px;
+            background: #0d0d0d;
+            color: #00ffcc;
+            border-radius: 10px;
+            margin-top: 20px;                           
+        }
+        .register form {
+            margin-top: 10px;
+        }
+        .register input[type="text"], .register input[type="email"] {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        .register input[type="submit"] {
+            padding: 10px 20px;
+            background: #00ffcc;
+            border: none;
+            border-radius: 5px;
+            color: #0d0d0d;
+            cursor: pointer;
+        }
+        /* Swiper styles */
+        .swiper-container {
+            width: 100%;
+            height: 500px; /* Aumenta la altura del slider */
+            margin-top: 20px;
+            position: relative;
+        }
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .swiper-slide img {
+            width: 90%;
+            height: 100%;
+            object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+        }
+        .swiper-pagination, .swiper-button-next, .swiper-button-prev {
+            position: absolute;
+            width: 13%;
+            height: 90%;
+            bottom: 10px; /* Mueve los controles a la parte inferior */
+            color: #00ffcc;
+        }
+        .swiper-button-next, .swiper-button-prev {
+            top: auto; /* Evita que se superpongan con las imágenes */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="image.png" alt="Universidad de Guadalajara">
+        <div class="title-container">
+            <span class="main-title">UNIVERSIDAD DE GUADALAJARA</span>
+            <span class="sub-title">Red Universitaria e Institución Benemérita de Jalisco</span>
+        </div>
+    </div>
+    <header>
+        <h1>GIRA CUCEI: PIXELES PARA DISEÑAR TU CAMINO EN INGENIERÍA Y CIENCIAS</h1>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+           
+            <div class="swiper-slide"><img src="slide2.jpg" alt="Slide 2"></div>
+            <div class="swiper-slide"><img src="slide1.jpg" alt="Slide 1"></div>
+            <div class="swiper-slide"><img src="slide3.jpg" alt="Slide 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="container">
+        <section id="main">
+            <h1>Bienvenidos</h1>
+            <p>Únete para una experiencia interactiva donde podrás explorar las oportunidades académicas que ofrece el CUCEI. Sumérgete en el mundo de los videojuegos y descubre cómo la ingeniería y la tecnología se fusionan para crear experiencias innovadoras y divertidas.</p>
+            
+            <div class="calendar">
+                <h2 class="section-title">Calendario de la Gira</h2>
+                <ul>
+                    <li>01 Julio 2024 - Ciudad A</li>
+                    <li>15 Julio 2024 - Ciudad B</li>
+                    <li>01 Agosto 2024 - Ciudad C</li>
+                    <li>15 Agosto 2024 - Ciudad D</li>
+                </ul>
+            </div>
+            
+            <div class="games">
+                <h2 class="section-title">Juegos</h2>
+                <ul>
+                    <li>Juego 1: Carrera Virtual</li>
+                    <li>Juego 2: Desafío de Estrategia</li>
+                    <li>Juego 3: Competencia de Reflejos</li>
+                </ul>
+            </div>
+            
+            <div class="categories">
+                <h2 class="section-title">Categorías de Actividad</h2>
+                <ul>
+                    <li>Principiante</li>
+                    <li>Intermedio</li>
+                    <li>Avanzado</li>
+                </ul>
+            </div>
+            
+            <div class="info">
+                <h2 class="section-title">Información sobre Carreras y Videojuegos</h2>
+                <ul>
+                    <li>Las habilidades en videojuegos pueden mejorar la coordinación ojo-mano, crucial en carreras de ingeniería.</li>
+                    <li>La estrategia en videojuegos es similar a la resolución de problemas en muchas profesiones.</li>
+                    <li>El trabajo en equipo en juegos multijugador se refleja en entornos de trabajo colaborativos.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="register">
+            <h2>Regístrate para Asistir</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Tu Nombre" required><br>
+                <input type="email" name="email" placeholder="Tu Email" required><br>
+                <input type="submit" value="Registrarse">
+            </form>
+        </section>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
