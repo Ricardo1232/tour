@@ -1,0 +1,23 @@
+.top-bar {
+    background-color: #1a1a1a; 
+    padding: 10px;
+    color: #00ffcc; 
+    display: flex;
+    align-items: center;
+}
+.top-bar img {
+    height: 80px;
+    margin-right: 10px;
+}
+.top-bar .title-container {
+    display: flex;
+    flex-direction: column;
+}
+.top-bar .main-title {
+    font-size: 1.5em;
+    color: #00ffcc; 
+}
+.top-bar .sub-title {
+    font-size: 1em;
+    color: #ffffff; 
+}

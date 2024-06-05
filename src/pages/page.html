@@ -7,7 +7,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
-        body {
+        body { 
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -15,9 +15,9 @@
             color: #ffffff;
         }
         .top-bar {
-            background-color: #a31f34;
+            background-color: #1a1a1a; 
             padding: 10px;
-            color: #ffffff;
+            color: #00ffcc; 
             display: flex;
             align-items: center;
         }
@@ -31,10 +31,13 @@
         }
         .top-bar .main-title {
             font-size: 1.5em;
+            color: #00ffcc; 
         }
         .top-bar .sub-title {
             font-size: 1em;
+            color: #ffffff; 
         }
+
         header {
             background-color: #0d0d0d;
             color: #00ffcc;
@@ -84,7 +87,7 @@
             background: #0d0d0d;
             color: #00ffcc;
             border-radius: 10px;
-            margin-top: 20px;                           
+            margin-top: 20px;
         }
         .register form {
             margin-top: 10px;
@@ -118,11 +121,19 @@
             font-size: 20px;
         }
         .swiper-slide img {
-            width: 90%;
-            height: 100%;
+            width: 95%;
+            height: 90%;
             object-fit: cover; /* Para que la imagen cubra todo el contenedor */
         }
-        .swiper-pagination, .swiper-button-next, .swiper-button-prev {
+        .swiper-pagination{
+            position: absolute;
+            
+            height: 10%;
+            bottom: 10px; /* Mueve los controles a la parte inferior */
+            color: #00ffcc;
+        } 
+        
+        .swiper-button-next, .swiper-button-prev {
             position: absolute;
             width: 13%;
             height: 90%;
@@ -136,14 +147,14 @@
 </head>
 <body>
     <div class="top-bar">
-        <img src="image.png" alt="Universidad de Guadalajara">
+        <img src="/public/image.png" alt="Universidad de Guadalajara">
         <div class="title-container">
             <span class="main-title">UNIVERSIDAD DE GUADALAJARA</span>
             <span class="sub-title">Red Universitaria e Institución Benemérita de Jalisco</span>
         </div>
     </div>
     <header>
-        <h1>GIRA CUCEI: PIXELES PARA DISEÑAR TU CAMINO EN INGENIERÍA Y CIENCIAS</h1>
+        <h4>GIRA CUCEI: PIXELES PARA DISEÑAR TU CAMINO EN INGENIERÍA Y CIENCIAS</h4>
     </header>
     <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -201,7 +212,7 @@
         
         <section class="register">
             <h2>Regístrate para Asistir</h2>
-            <form action="#" method="post">
+            <form action="" method="post">
                 <input type="text" name="name" placeholder="Tu Nombre" required><br>
                 <input type="email" name="email" placeholder="Tu Email" required><br>
                 <input type="submit" value="Registrarse">
