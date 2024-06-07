@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom-colored': '0 4px 6px -1px #c6ffee', // sombra con color personalizado
+      },
       colors: {
         'aquamarine': {
           '50': '#e7fff9',

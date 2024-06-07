@@ -1,23 +1,22 @@
 ---
 interface Props {
-	carrera     : string;
+	  carrera     : string;
     descripcion : string;
-    imagen      :string;
-    enlace      :string;
+    imagen      : string;
+    enlace      : string;
 }
 
 const { carrera, descripcion, imagen, enlace } = Astro.props;
 
 ---
 
-<div class="bg-aquamarine-800 bg-opacity-75 rounded-lg shadow-lg overflow-hidden max-w-sm mb-4">
+<div class="bg-aquamarine-800 bg-opacity-75 rounded-lg shadow-lg overflow-hidden max-w-sm w-full">
     <div class="relative">
-      <img src="{imagen}" alt="Imagen de promoción" class="w-full h-48 object-cover">
-      <div class="absolute inset-0 bg-aquamarine-950 opacity-50"></div>
+      <img src={imagen} alt="Imagen de promoción" class="w-full h-40 object-cover p-0.5 rounded-lg">
     </div>
-    <div class="p-6">
+    <div class="p-6 flex flex-col items-center">
       <h2 class="text-aquamarine-100 text-2xl font-semibold mb-2">{carrera}</h2>
-      <p class="text-aquamarine-200 mb-4">{descripcion}</p>
-      <a href="{enlace}" class="inline-block bg-aquamarine-600 text-white font-semibold py-2 px-4 rounded hover:bg-aquamarine-700 transition duration-300">Más Información</a>
+      <p class="text-aquamarine-200 mb-4 text-justify">{descripcion}</p>
+      <a href={enlace} class="inline-block bg-aquamarine-600 text-white font-semibold py-2 px-4 rounded hover:bg-aquamarine-700 transition duration-300">Más Información</a>
     </div>
   </div>

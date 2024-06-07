@@ -4,6 +4,8 @@ import Barra from "../components/Barra_superior.astro";
 import Slider from "../components/Slider.astro";
 import CardsCarreras from "../components/Cards_Carreras.astro";
 import Footer from "../components/Footer.astro";
+import TopBar from "../components/TopBar.astro";
+import Calendario from "../components/Calendario.astro";
 ---
 
 <!DOCTYPE html>
@@ -15,135 +17,123 @@ import Footer from "../components/Footer.astro";
     <title>Document</title>
     <link rel="stylesheet" href="src/styles/global.css">
     <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/TopBar.css">
+
 
 </head>
 <body>
+    <TopBar/> 
     <Barra/>
     <Fondo/> 
     <br>
     <br> 
     <br> 
-    <br> 
-    <br>
-
     <Slider/>    
-    <div class="mt-10 flex flex-wrap justify-center space-x-4">
-      <!-- Contenedor 1 -->
-      <div class="bg-aquamarine-800 bg-opacity-75 rounded-lg shadow-lg overflow-hidden max-w-sm mb-4">
-        <div class="relative">
-          <img src="ruta-a-tu-imagen.jpg" alt="Imagen de promoción" class="w-full h-48 object-cover">
-          <div class="absolute inset-0 bg-aquamarine-950 opacity-50"></div>
-        </div>
-        <div class="p-6">
-          <h2 class="text-aquamarine-100 text-2xl font-semibold mb-2">Carrera 1</h2>
-          <p class="text-aquamarine-200 mb-4">Únete a nuestra prestigiosa universidad y descubre las increíbles oportunidades que te esperan en el mundo de la ingeniería en software.</p>
-          <a href="IngComputacion" class="inline-block bg-aquamarine-600 text-white font-semibold py-2 px-4 rounded hover:bg-aquamarine-700 transition duration-300">Más Información</a>
-        </div>
-      </div>
+
+
+    <h1 class="text-aquamarine-50 text-center text-3xl font-semibold mt-2 shadow-custom-colored py-2 mb-5">Calendario</h1>
+
     
-        <!-- Contenedor 2 -->
-      <div class="bg-aquamarine-800 bg-opacity-75 rounded-lg shadow-lg overflow-hidden max-w-sm mb-4">
-        <div class="relative">
-          <img src="ruta-a-tu-imagen.jpg" alt="Imagen de promoción" class="w-full h-48 object-cover">
-          <div class="absolute inset-0 bg-aquamarine-950 opacity-50"></div>
-        </div>
-        <div class="p-6">
-          <h2 class="text-aquamarine-100 text-2xl font-semibold mb-2">Carrera 2</h2>
-          <p class="text-aquamarine-200 mb-4">Únete a nuestra prestigiosa universidad y descubre las increíbles oportunidades que te esperan en el mundo de la ingeniería en software.</p>
-          <a href="#" class="inline-block bg-aquamarine-600 text-white font-semibold py-2 px-4 rounded hover:bg-aquamarine-700 transition duration-300">Más Información</a>
-        </div>
-      </div>
-    
-      <!-- Contenedor 3 -->
-      <div class="bg-aquamarine-800 bg-opacity-75 rounded-lg shadow-lg overflow-hidden max-w-sm mb-4">
-        <div class="relative">
-          <img src="ruta-a-tu-imagen.jpg" alt="Imagen de promoción" class="w-full h-48 object-cover">
-          <div class="absolute inset-0 bg-aquamarine-950 opacity-50"></div>
-        </div>
-        <div class="p-6">
-          <h2 class="text-aquamarine-100 text-2xl font-semibold mb-2">Carrera 3</h2>
-          <p class="text-aquamarine-200 mb-4">Únete a nuestra prestigiosa universidad y descubre las increíbles oportunidades que te esperan en el mundo de la ingeniería en software.</p>
-          <a href="#" class="inline-block bg-aquamarine-600 text-white font-semibold py-2 px-4 rounded hover:bg-aquamarine-700 transition duration-300">Más Información</a>
-        </div>
-      </div>
-      
-      <CardsCarreras
-      carrera="Hola que tal"
-      enlace="no existe"
-      descripcion="sdam id  fugiat hic nihil harum repellat odio. Dolores, consequatur nihil! Illo recusandae voluptates dolorem quidem quisquam explicabo, repellat ullam aperiam corporis non? Ullam dignissimos harum consequuntur debitis nam voluptatem! Assumenda exercitationem labore, quam voluptatibus accusamus tenetur nihil maiores dolorem nostrum mollitia dolores doloremque modi? Porro sequi, officiis eum vitae exercitationem debitis voluptatum in id facilis aperiam corporis nisi! Ut, cumque maxime? Expedita at dignissimos eligendi! Itaque corporis alias, corrupti aspernatur sapiente veniam esse sit debitis eos."
-      imagen="ruta-a-tu-imagen.jpg"
-      />
-      <CardsCarreras
-      carrera="Hola que tal"
-      enlace="no existe"
-      descripcion="Lorem is error nemo qharum repellat odio. Dolores, consequatur nihil! Illo recusandae voluptates dolorem quidem quisquam explicabo, repellat ullam aperiam corporis non? Ullam dignissimos harum consequuntur debitis nam voluptatem! Assumenda exercitationem labore, quam voluptatibus accusamus tenetur nihil maiores dolorem nostrum mollitia dolores doloremque modi? Porro sequi, officiis eum vitae exercitationem debitis voluptatum in id facilis aperiam corporis nisi! Ut, cumque maxime? Expedita at dignissimos eligendi! Itaque corporis alias, corrupti aspernatur sapiente veniam esse sit debitis eos."
-      imagen="ruta-a-tu-imagen.jpg"
-      />
-      <CardsCarreras
-      carrera="Hola que tal"
-      enlace="no existe"
-      descripcion="Lorem ipsum dolor sit aostrum repellendus corporis alias molestias possimus illum quae fugiat hic nihil harum repellat odio. Dolores, consequatur nihil! Illo recusandae voluptates dolorem quidem quisquam explicabo, repellat ullam aperiam corporis non? Ullam dignissimos harum consequuntur debitis nam voluptatem! Assumenda exercitationem labore, quam voluptatibus accusamus tenetur nihil maiores dolorem nostrum mollitia dolores doloremque modi? Porro sequi, officiis eum vitae exercitationem debitis voluptatum in id facilis aperiam corporis nisi! Ut, cumque maxime? Expedita at dignissimos eligendi! Itaque corporis alias, corrupti aspernatur sapiente veniam esse sit debitis eos."
-      imagen="ruta-a-tu-imagen.jpg"
-      />
+    <Calendario/>
+
+
+
+
+    <h1 class="text-aquamarine-50 text-center text-3xl font-semibold mt-4 shadow-custom-colored py-2">Carreras</h1>
+
+    <div class="mt-10  grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center px-12">
+        <CardsCarreras
+        carrera="Ingeniería en Computación"
+        enlace="https://www.cucei.udg.mx/es/oferta-academica/licenciaturas/licenciatura-en-ingenieria-en-computacion"
+        descripcion="¿Te apasionan las computadoras y la tecnología? La carrera de Ingeniería en Computación es para ti. Aprenderás a diseñar y desarrollar software, crear apps, y trabajar con sistemas operativos y redes. Además, podrás construir y reparar hardware. ¡Prepárate para un futuro lleno de oportunidades en el mundo digital!"
+        imagen="/public/programadores_mimidos.jpeg"
+        />
+        <CardsCarreras
+        carrera="Ingeniería Informática"
+        enlace="https://www.cucei.udg.mx/es/oferta-academica/licenciaturas/licenciatura-en-ingenieria-informatica"
+        descripcion="¿Te interesa cómo funcionan los sistemas de información y la tecnología? En Ingeniería Informática aprenderás a diseñar y mantener software y sistemas de información que facilitan las operaciones diarias de las empresas. Además, podrás trabajar con redes, servidores y desarrollar proyectos de software innovadores. ¡Únete y sé parte del futuro digital!"
+        imagen="/public/sant_uri.jpg"
+        />
+        <CardsCarreras
+        carrera="Ingeniería Biomédica"
+        enlace="https://www.cucei.udg.mx/es/oferta-academica/licenciaturas/licenciatura-en-ingenieria-biomedica"
+        descripcion="¿Te apasiona la tecnología y la salud? La Ingeniería Biomédica combina ingeniería y administración para solucionar problemas del sector salud mediante dispositivos médicos, prótesis, y equipos de rehabilitación. Aprende sobre biomecánica, procesamiento de señales electrofisiológicas, y gestión hospitalaria. ¡Sé un profesional innovador y mejora la calidad de vida de las personas!"
+        imagen="/public/santi_uri_forever.jpg"
+        />
+        <CardsCarreras
+        carrera="Ingeniería Robótica"
+        enlace="https://www.cucei.udg.mx/es/oferta-academica/licenciaturas/licenciatura-en-ingenieria-robotica"
+        descripcion="¿Te apasiona la robótica y la automatización? La Ingeniería Robótica en CUCEI te ofrece una formación científica, tecnológica y humanística para especializarte en el control de procesos industriales automatizados, la implementación de sistemas robóticos y el desarrollo de nuevas tecnologías. Conviértete en un experto en la industria, salud, entretenimiento y más."
+        imagen="ruta-a-tu-imagen.jpg"
+        />
+        <CardsCarreras
+        carrera="Ingeniería Fotónica"
+        enlace="https://www.cucei.udg.mx/es/oferta-academica/licenciaturas/licenciatura-en-ingenieria-fotonica"
+        descripcion="¿Te interesa el mundo de la luz y las tecnologías láser? La Ingeniería Fotónica en CUCEI te capacita para diseñar sistemas y productos de alta precisión en tecnologías como láseres, fibras ópticas y energía solar. Aprende a aplicar estos conocimientos en telecomunicaciones, salud, manufactura, seguridad, y más."
+        imagen="ruta-a-tu-imagen.jpg"
+        />
+       
 
 
 
     </div>
+
     <Footer/>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const carouselItems = document.querySelectorAll('.carousel-item');
-            const prevButton = document.querySelector('[data-carousel-prev]');
-            const nextButton = document.querySelector('[data-carousel-next]');
-            const navButtons = document.querySelectorAll('[data-slide]');
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const carouselItems = document.querySelectorAll('.carousel-item');
+      const prevButton = document.querySelector('[data-carousel-prev]');
+      const nextButton = document.querySelector('[data-carousel-next]');
+      const navButtons = document.querySelectorAll('[data-slide]');
+
+      let currentSlide = 0;
+      const totalSlides = carouselItems.length;
+      const interval = 5000; // Cambiar imagen cada 5 segundos
+
+      function showSlide(index) {
+          carouselItems.forEach((item, i) => {
+              item.classList.add('hidden');
+              item.classList.remove('opacity-100');
+              item.classList.add('opacity-0');
+              if (i === index) {
+                  item.classList.remove('hidden');
+                  item.classList.add('opacity-100');
+                  item.classList.remove('opacity-0');
+              }
+          });
+          navButtons.forEach((button, i) => {
+              button.setAttribute('aria-current', i === index ? 'true' : 'false');
+          });
+      }
+
+      function prevSlide() {
+          currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
+          showSlide(currentSlide);
+      }
+
+      function nextSlide() {
+          currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
+          showSlide(currentSlide);
+      }
+
+      prevButton.addEventListener('click', prevSlide);
+      nextButton.addEventListener('click', nextSlide);
+      navButtons.forEach(button => {
+          button.addEventListener('click', () => {
+              currentSlide = parseInt(button.getAttribute('data-slide'));
+              showSlide(currentSlide);
+          });
+      });
+
       
-            let currentSlide = 0;
-            const totalSlides = carouselItems.length;
-            const interval = 5000; // Cambiar imagen cada 5 segundos
-      
-            function showSlide(index) {
-                carouselItems.forEach((item, i) => {
-                    item.classList.add('hidden');
-                    item.classList.remove('opacity-100');
-                    item.classList.add('opacity-0');
-                    if (i === index) {
-                        item.classList.remove('hidden');
-                        item.classList.add('opacity-100');
-                        item.classList.remove('opacity-0');
-                    }
-                });
-                navButtons.forEach((button, i) => {
-                    button.setAttribute('aria-current', i === index ? 'true' : 'false');
-                });
-            }
-      
-            function prevSlide() {
-                currentSlide = (currentSlide > 0) ? currentSlide - 1 : totalSlides - 1;
-                showSlide(currentSlide);
-            }
-      
-            function nextSlide() {
-                currentSlide = (currentSlide < totalSlides - 1) ? currentSlide + 1 : 0;
-                showSlide(currentSlide);
-            }
-      
-            prevButton.addEventListener('click', prevSlide);
-            nextButton.addEventListener('click', nextSlide);
-            navButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    currentSlide = parseInt(button.getAttribute('data-slide'));
-                    showSlide(currentSlide);
-                });
-            });
-      
-            
-            setInterval(() => {
-                nextSlide();
-            }, interval);
-      
-            showSlide(currentSlide);
-        });
-      </script>
+      setInterval(() => {
+          nextSlide();
+      }, interval);
+
+      showSlide(currentSlide);
+      });
+    </script>
+
       
       
   </body>

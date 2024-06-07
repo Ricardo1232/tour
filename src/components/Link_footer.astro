@@ -1,0 +1,13 @@
+---
+interface Props {
+
+    descripcion : string;
+
+    enlace      : string;
+}
+const { descripcion, enlace } = Astro.props;
+---
+
+<li class="mt-2 inline-block mr-2 md:block md:mr-0">
+    <a href={enlace} class="no-underline hover:underline hover:text-gray-400 text-white">{descripcion}</a>
+</li>
