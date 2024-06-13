@@ -1,7 +1,11 @@
 ---
 import Fondo from "../components/Fondo.astro"
 import Barra from "../components/Barra_superior.astro";
-import Slider from "../components/Slider.astro";
+import Topbar from "../components/TopBar.astro";
+import CardsJuegos from "../components/Cards_Juegos.astro";
+import CardsJuegos2  from "../components/Cards_Juegos2.astro";
+// import Footer from "../components/Footer.astro";
+
 
 ---
 <!DOCTYPE html>
@@ -10,16 +14,74 @@ import Slider from "../components/Slider.astro";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/TopBar.css">
 </head>
 <body>
-    <Barra/>
+    <Topbar/>
+    <!-- <Barra/> -->
     <Fondo/> 
-    <br>
-    <br> 
-    <br> 
-    <br> 
-    <br>
+    <main class="container mx-auto px-4 py-8">
+      <div class="bg-gradient-to-tr from-aquamarine-900 to-aquamarine-500 p-8 md:p-12 rounded-lg shadow-lg my-10 opacity-90">
+        <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">¿Te apasiona la tecnología y los videojuegos?</h2>
+      
+        <p class="text-white text-center font-sans text-lg md:text-xl leading-relaxed mb-6">
+          La carrera de Ingeniería en Computación te brinda las herramientas para convertir tus pasiones en realidad. Aprenderás a diseñar, desarrollar y mantener sistemas de software y hardware, abriendo un mundo de posibilidades.
+        </p>
+      
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+          <div class="bg-aquamarine-100 p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-aquamarine-900 mb-2">Crea tus propios juegos</h3>
+            <p class="text-aquamarine-800">Domina la programación, gráficos y redes para dar vida a tus ideas y crear experiencias interactivas únicas.</p>
+          </div>
+          <div class="bg-aquamarine-100 p-4 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold text-aquamarine-900 mb-2">Explora un mundo de posibilidades</h3>
+            <p class="text-aquamarine-800">Desarrolla aplicaciones web, inteligencia artificial, robots e incluso sistemas de seguridad informática.</p>
+          </div>
+        </div>
+      
+        <p class="text-white text-center font-sans text-lg md:text-xl leading-relaxed mt-6">
+          Si eres un apasionado de la tecnología y te encanta resolver problemas, ¡la Ingeniería en Computación es tu camino!
+        </p>
+      </div>
+        
+        <!-- Tarjetas de Juegos Relacionados con Ingeniería en Computación -->
+        <div class="space-y-8">
+          <CardsJuegos
+          href="https://store.steampowered.com/app/427520/Factorio/"
+          imgSrc="/public/factorio.jpg"
+          imgAlt="Imagen de Factorio"
+          title="Factorio"
+          description="Factorio te sumerge en la optimización de procesos y la automatización, habilidades esenciales para un ingeniero en computación. Diseñarás sistemas de producción complejos, gestionarás recursos limitados y solucionarás problemas logísticos, preparándote para los desafíos de la ingeniería de software y la gestión de proyectos."
+        />
+      
+        <CardsJuegos2
+          href="https://www.minecraft.net/"
+          imgSrc="/public/minecraft.jpg" 
+          imgAlt="Imagen de Minecraft"
+          title="Minecraft con Mods Técnicos"
+          description="Minecraft con mods técnicos como ComputerCraft te permite construir circuitos lógicos y programar en Lua, un lenguaje de scripting utilizado en la industria. Aprenderás los fundamentos de la electrónica digital y la programación, sentando las bases para comprender la arquitectura de computadoras y desarrollar software."
+        />
+        <CardsJuegos
+          href="https://codecombat.com/"
+          imgSrc="/public/battle_no_se.jpg"
+          imgAlt="Imagen de CodeCombat"
+          title="CodeCombat"
+          description="CodeCombat te introduce a la programación de una manera divertida y práctica. Aprenderás los conceptos básicos de la programación orientada a objetos, resolverás desafíos de lógica y desarrollarás habilidades de resolución de problemas, esenciales para el desarrollo de software y la creación de aplicaciones."
+        />
+      
+        <CardsJuegos2
+          href="https://store.steampowered.com/app/504210/SHENZHEN_IO/"
+          imgSrc="/public/shein.jpg"
+          imgAlt="Imagen de Shein"
+          title="Shenzhen I/O"
+          description="Shenzhen I/O te desafía a diseñar circuitos electrónicos y programar microcontroladores, acercándote al mundo de la electrónica y los sistemas embebidos. Aprenderás sobre componentes electrónicos, diseño de circuitos y programación de bajo nivel, conocimientos aplicables en el desarrollo de hardware, robótica y automatización industrial."
+        />
+        </div>
+        
+      </main>
 
-    <Slider/>    
+      <!-- <Footer/> -->
 </body>
 </html>

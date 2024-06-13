@@ -1,22 +1,40 @@
 .top-bar {
+    position: relative;
     background-color: #1a1a1a; 
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 100px; 
 }
-.top-bar img {
-    height: 80px;
-    margin-right: 10px;
+
+.top-bar .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 85px;
+    transform: translate(-50%, -50%); 
+    z-index: 0; 
+    object-fit: cover; 
 }
+
 .top-bar .title-container {
+    position: relative;
     display: flex;
     flex-direction: column;
+    text-align: center; /* Centra el texto horizontalmente */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
 }
+
 .top-bar .main-title {
     font-size: 1.5em;
     color: #00ffcc; 
+    margin: 0;
 }
+
 .top-bar .sub-title {
     font-size: 1em;
     color: #ffffff; 
+    margin: 0;
 }
+
